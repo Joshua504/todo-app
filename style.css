@@ -167,6 +167,7 @@ button:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2.5em;
   }
   .view-con h4,
   .view-con h5{
@@ -176,6 +177,57 @@ button:active {
   }
   .view-con h5{
     color: #198BCF;
+    cursor: pointer;
+  }
+  .content-con{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+  .content-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: #266EF1;
+    padding: 15px 10px;
+    border-radius: 15px;
+  }
+  .content-box p{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: #ffff;
+  }
+  .icon-con{
+    background: #EDEFF3;
+    padding: 9px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 8px;
+  }
+  .bulb{
+    font-size: 1.5em;
+    color: #F9C42A;
+  }
+  .nav-con{
+    display: flex;
+    background: #2575fc;
+    padding: 1em 1.5em;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 40px;
+    position: fixed;
+    width: 100%;
+    top: 44em;
+    left: 0;
+    right: 0;
+    z-index: 2em;
+  }
+  .nav-con div > .nav-icon{
+    font-size: 1.3rem;
+    color: #ffff;
     cursor: pointer;
   }
 }
