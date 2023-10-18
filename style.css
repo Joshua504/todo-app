@@ -1,14 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.body-con{
+.body-con {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.slide-con{
+.slide-con {
   position: relative;
   background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
   height: 100vh;
@@ -26,47 +26,47 @@
 .active {
   display: block;
 }
-.handle-con{
+.handle-con {
   background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
   width: 100%;
   height: 100vh;
   padding: 1em 2em;
   text-align: center;
 }
-.handle-con h1{
-  font-family: 'Author', sans-serif;
+.handle-con h1 {
+  font-family: "Author", sans-serif;
   font-size: 2em;
   text-transform: capitalize;
   margin-bottom: 4em;
 }
-.handle-form{
+.handle-form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.handle-con .img-con{
+.handle-con .img-con {
   height: 200px;
   width: 200px;
   border-radius: 100px;
   background: #000;
   margin-bottom: 2em;
 }
-.inpt-con{
+.inpt-con {
   margin-bottom: 1.5em;
 }
-.inpt-con input{
+.inpt-con input {
   width: 100%;
   height: 50px;
   border: none;
   outline: none;
   font-size: 16px;
-  font-family: 'Author', sans-serif;
+  font-family: "Author", sans-serif;
   border-radius: 25px;
   padding: 1em;
   margin-bottom: 1em;
 }
-.btn-con button{
+.btn-con button {
   align-items: center;
   background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
@@ -74,13 +74,13 @@
   color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
   display: inline-flex;
-  font-family: 'Author', sans-serif;
+  font-family: "Author", sans-serif;
   border-radius: 30px;
   font-size: 1.3em;
   outline: none;
   justify-content: center;
   min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
   transition: all 250ms;
   width: 100%;
 }
@@ -97,15 +97,15 @@ button:hover {
 }
 
 button:active {
-  background-color: #F0F0F1;
+  background-color: #f0f0f1;
   border-color: rgba(0, 0, 0, 0.15);
   box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
 }
-@media (width <= 767px){
-  body{
-    background: #F9F9FB;
+@media (width <= 767px) {
+  body {
+    background: #f9f9fb;
   }
   .head-con {
     display: flex;
@@ -114,45 +114,46 @@ button:active {
     padding: 1em;
     position: fixed;
     width: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
-  .welcom-sec h2{
+  .welcom-sec h2 {
     font-size: 1.3rem;
     text-transform: capitalize;
   }
-  .date-sec{
+  .date-sec {
     background: #ffff;
     padding: 7px;
     border-radius: 6px;
   }
-  .date-sec p span{
+  .date-sec p span {
     font-size: 20px;
   }
-  main{
+  main {
     padding: 6em 1em;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
   }
-  .ad-sec{
+  .ad-sec {
     background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
     padding: 1em;
     border-radius: 15px;
     margin-bottom: 1.7em;
+    transition: all 0.5s ease-in-out;
   }
-  .ad-sec p{
+  .ad-sec p {
     text-transform: capitalize;
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 9px;
-    color: #198BCF;
+    color: #198bcf;
   }
-  .ad-sec h2{
+  .ad-sec h2 {
     font-size: 1.3rem;
     font-weight: 500;
     text-transform: capitalize;
     margin-bottom: 9px;
-    color: #F0F0F1;
+    color: #f0f0f1;
   }
-  .ad-sec button{
+  .ad-sec button {
     padding: 15px 45px;
     font-size: 17px;
     font-family: inherit;
@@ -163,55 +164,100 @@ button:active {
     border: none;
     cursor: pointer;
   }
-  .view-con{
+  .search-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+  .search-con div input {
+    width: 127%;
+    padding: 1em;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 50px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .search-con div button {
+    padding: 1em 1.5em;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: 300;
+    text-transform: capitalize;
+    border-radius: 25px;
+    background: #266ef1;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #ffff;
+  }
+  .view-con {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 2.5em;
   }
   .view-con h4,
-  .view-con h5{
+  .view-con h5 {
     font-size: 1.2rem;
     font-weight: 300;
     text-transform: capitalize;
   }
-  .view-con h5{
-    color: #198BCF;
+  .view-con h5 {
+    color: #198bcf;
     cursor: pointer;
   }
-  .content-con{
+  .content-con {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1em;
   }
-  .content-box{
+  .content-box {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    background: #266EF1;
+    background: #266ef1;
     padding: 15px 10px;
     border-radius: 15px;
   }
-  .content-box p{
+  .content-box p {
     font-size: 16px;
     font-weight: 400;
     text-transform: capitalize;
     color: #ffff;
   }
-  .icon-con{
-    background: #EDEFF3;
+  .edit-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .edit-sec div span .del {
+    color: rgb(230, 20, 20);
+  }
+  .edit-sec div span .edt {
+    color: rgb(11, 170, 11);
+  }
+  .edit-sec div span .edit {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .icon-con {
+    background: #edeff3;
     padding: 9px;
     align-items: center;
     justify-content: center;
     display: flex;
     border-radius: 8px;
   }
-  .bulb{
+  .bulb {
     font-size: 1.5em;
-    color: #F9C42A;
+    color: #f9c42a;
   }
-  .nav-con{
+  .nav-con {
     display: flex;
     background: #2575fc;
     padding: 1em 1.5em;
@@ -225,9 +271,12 @@ button:active {
     right: 0;
     z-index: 2em;
   }
-  .nav-con div > .nav-icon{
+  .nav-con div > .nav-icon {
     font-size: 1.3rem;
     color: #ffff;
     cursor: pointer;
+  }
+  .dont-show {
+    display: none;
   }
 }
